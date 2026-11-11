@@ -2,7 +2,7 @@ import lgpio
 import time
 
 h = lgpio.gpiochip_open(0)
-MOTOR_PIN = 18
+MOTOR_PIN = 17
 lgpio.gpio_claim_output(h, MOTOR_PIN)
 
 def pfm_run(frequency, duration):
